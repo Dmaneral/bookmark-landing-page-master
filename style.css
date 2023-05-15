@@ -1,0 +1,830 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    height: 100%;
+}
+
+.content {
+    padding: 15rem 0 0 0;
+}
+
+header {
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 3rem 3rem 3rem;
+}
+
+nav {
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#desktop-nav {
+    display: none;
+}
+
+nav ul {
+    padding: 3rem 0 2rem 0;
+    list-style: none;
+    width: 100%;
+}
+
+nav ul li {
+    color: white;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+nav button {
+    width: calc(100% - 6rem);
+    height: 5rem;
+    background:  transparent;
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-top: 2rem;
+
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav .social-icons {
+    position: absolute;
+    bottom: 15rem;
+    display: flex;
+    gap: 2rem;
+}
+
+ul hr {
+    border: none;
+    height: 1px;
+    margin: 0 3rem;
+    background-color: hsl(229, 8%, 60%);
+}
+
+.img {
+    position: relative;
+}
+
+.img img {
+    position: absolute;
+}
+
+.shape {
+    position: absolute;
+    width: 30rem;
+    height: 20rem;
+    background-color: #4f63d6;
+    top: 6rem;
+    right: 0;
+    z-index: -1;
+    border-radius: 50% 0 0 50%;
+}
+
+.bookmark-manager {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 33.5rem 3rem 3rem 3rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    text-align: center;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    color: hsl(229, 8%, 60%);
+    text-align: center;
+}
+
+.get-btn-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.btn {
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 7px;
+    box-shadow: 1px 6px 28px -3px rgba(145,148,161,0.75);
+    border: none;
+
+
+}
+
+.chrome {
+    background-color: hsl(231, 69%, 60%);
+    width: 50%;
+    transition: background .5s, color .5s;
+    color: white;
+}
+
+.firefox {
+    background-color: white;
+    width: 50%;
+    color: hsl(229, 31%, 21%);
+}
+
+.features {
+    padding: 10rem 0 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    text-align: center;
+    padding: 0 3rem 1.5rem 3rem;
+}
+
+.features p {
+    padding: 0 3rem 3.5rem 3rem;
+}
+
+.feature-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3rem 6rem 3rem;
+}
+
+.feature-list div {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    text-align: center;
+    padding: 1.8rem 1.5rem;
+    width: 60%;
+    transition: color .5s;
+}
+
+.desktop-hr {
+    display: none;
+}
+
+.feature-list hr {
+    width: 100%;
+}
+
+#simple-bookmarking {
+    border-bottom: 3px solid red;
+    padding: 1.8rem 1.5rem 1.5rem 1.5rem;
+}
+
+#speedy-searching-cont {
+    display: none;
+}
+
+#easy-sharing-cont {
+    display: none;
+}
+
+.img1 {
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+.img1 img {
+    padding: 0 3rem;
+}
+
+.features-content {
+    position: relative;
+}
+
+.features-content .shape {
+    position: absolute;
+    width: 30rem;
+    height: 20rem;
+    background-color: #4f63d6;
+    top: 4rem;
+    left: 0;
+    z-index: -1;
+    border-radius: 0 50% 50% 0;
+}
+
+.features-btn {
+    display: none;
+}
+
+.download-extension {
+    padding: 0 3rem 10rem 3rem;
+}
+
+
+.down-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 14px -8px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    margin-top: 5rem;
+}
+
+.browser-logo {
+    padding-top: 5rem;
+    width: fit-content;
+}
+
+.add-to {
+    font-size: 2rem;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    text-align: center;
+    padding: 3rem 0 0.5rem 0;
+}
+
+.version {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    color: hsl(229, 8%, 60%);
+    text-align: center;
+    padding-bottom: 3.5rem;
+}
+
+.down-box button {
+    margin: 3rem 0;
+    border: none;
+    background-color:  hsl(231, 69%, 60%);
+    width: 85%;
+    height: 5rem;
+    border-radius: 6px;
+    transition: background .5s, color .5s;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.faq {
+    padding: 5rem 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq h2 {
+    font-size: 2.4rem;
+}
+
+.faq p {
+    padding-bottom: 5rem;
+}
+
+.text {
+    padding-bottom: 2rem;
+}
+
+.text hr {
+    margin-top: 1.5rem;
+}
+
+.question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: none;
+}
+
+.question div {
+    color: hsl(229, 31%, 21%);
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: color .5s;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    font-size: 1.2rem;
+    color: hsl(229, 8%, 60%);
+    font-weight: 500;
+    padding-top: 1.2rem;
+    line-height: 2.5rem;
+}
+
+button svg {
+    transition: all .5s;
+}
+
+
+.text.active .answer {
+    max-height: max-content;
+}
+
+.text.active button svg {
+    transform: rotate(180deg);
+}
+
+.text.active button svg path{
+    stroke: hsl(0, 94%, 66%);
+}
+
+.more-info {
+    padding: 1.5rem 2rem;
+    background-color: hsl(231, 69%, 60%);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0px 4px 13px -11px rgba(29, 71, 187, 1);
+}
+
+.faq button.more-info {
+    margin-top: 2rem;
+}
+
+.contact {
+    background-color: hsl(231, 69%, 60%);
+    padding: 6rem 3rem 5rem 3rem;
+}
+
+.joined {
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.stay {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, form button {
+    border: none;
+    border-radius: 5px;
+    height: 4.5rem;
+}
+
+form button {
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+form input {
+    padding-left: 2rem;
+    outline: none;
+    width: 100%;
+}
+
+footer {
+    background-color: hsl(229, 31%, 21%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+footer img {
+    width: fit-content;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem 0;
+    transition: color .5s;
+}
+
+footer .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer .social-icons path {
+    transition: all .5s;
+}
+
+.input-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.input-with-error {
+    width: 100%;
+}
+
+#error {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.25rem;
+    display: none;
+}
+
+.error-border {
+    border: 1px solid hsl(0, 94%, 66%);
+}
+
+.error-message::after {
+    display: block;
+    content: "Whoops, make sure it's an email";
+    color: white;
+    background-color: hsl(0, 94%, 66%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+    padding: 0.7rem;
+    border-radius: 0 0 5px 5px;
+}
+
+/* ---- Tablet ---- */
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    #logo {
+        width: 35%;
+    }
+
+    #menu-open {
+        width: 5%;
+    }
+
+    .img img, .img1 img {
+        padding: 8rem;
+    }
+
+    .download-extension {
+        padding: 0 8rem 10rem 8rem;
+    }
+
+    .contact {
+        padding: 6rem 8rem 5rem 8rem;
+    }
+
+    .contact input {
+        font-size: 1.5rem;
+    }
+
+    .more-info {
+        font-size: 1.5rem;
+    }
+}
+
+/* ---- Desktop ---- */
+
+@media screen and (min-width: 1024px){
+    html {
+        font-size: 10px;
+    }
+
+    #logo {
+        width: fit-content;
+    }
+
+    #menu-open {
+        display: none;
+    }
+
+    #desktop-nav {
+        display: flex;
+        position: static;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    #desktop-nav ul li {
+        color: hsl(229, 31%, 21%);
+        font-size: 1.3rem;
+        transition: all .5s;
+    }
+
+    #desktop-nav ul {
+        padding:  0;
+    }
+
+    #desktop-nav button {
+        margin: 0;
+        background-color: hsl(0, 94%, 66%);
+        height: 3.4rem;
+        width: 16rem;
+        padding: 0;
+        font-size: 1.3rem;
+        transition: all .5s;
+    }
+
+    #desktop-nav hr {
+        display: none;
+    }
+
+    header {
+        position: static;
+        padding: 0 7rem;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .heading-cont {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 10rem;
+        padding-left: 5.5rem;
+    }   
+
+    .img img {
+        position: static;
+        padding: 0;
+    }
+
+    .img .shape {
+        height: 30rem;
+        width: 70%;
+        top: 20%;
+    }
+
+    .bookmark-manager {
+        width: 50%;
+        padding: 0 0 0 5rem;
+        align-items: flex-start;
+    }
+
+    .bookmark-manager h1, .bookmark-manager p {
+        text-align: left;
+    }
+
+    .get-btn-wrapper {
+        width: 90%;
+    }
+
+    .get-btn-wrapper button {
+        font-size: 1.3rem;
+    }
+
+    .feature-list {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    .feature-list hr {
+        display: none;
+    }
+
+    .feature-list {
+        padding: 0;
+    }
+
+    .desktop-hr {
+        display: inline;
+        width: 70%;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    .features-para {
+        width: 50%;
+    }
+
+    .features-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .img1 {
+        width: 45%;
+        padding-bottom: 0;
+    }
+
+    .img1 img {
+        padding: 6rem;
+    }
+
+    .features-content .shape {
+        left: 0;
+        top: 13rem;
+        width: 45%;
+        height: 70%;
+    }
+
+    .features-info {
+        width: 40%;
+    }
+
+    .features-info p, .features-info h2 {
+        text-align: left;
+    }
+
+    .features-btn {
+        margin-left: 3rem;
+        display: block;
+    }
+
+    .download-extension {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-extension p {
+        width: 60%;
+    }
+
+    .download-section {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        margin-top: 5rem;
+    }
+
+    .chrome-box {
+        margin: 0;
+        height: fit-content;
+    }
+
+    .firefox-box {
+        height: fit-content;
+    }
+
+    .opera-box {
+        margin-top: 10rem;
+        height: fit-content;
+    }
+
+    .faq p {
+        width: 60%;
+    }
+
+    .text {
+        width: 50%;
+    }
+
+    .faq .more-info {
+        margin-bottom: 13rem;
+    }
+
+    .contact {
+        padding: 7rem 30%;
+    }
+
+    form {
+        flex-direction: row;
+    }
+
+    form .input-wrapper {
+        width: 70%;
+    }
+
+    form button {
+        width: 30%;
+    }
+
+    .stay {
+        font-size: 3rem;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3rem 8rem;
+    }
+
+    ul {
+        display: flex;
+        gap: 4rem;
+    }
+
+    .list-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .list-wrapper img {
+        height: fit-content;
+    }
+
+    /* ---- Hovers ---- */
+
+    #desktop-nav ul li:hover, footer ul li:hover {
+        color: hsl(0, 94%, 66%);
+        cursor: pointer;
+    }
+
+    #desktop-nav button:hover, #submit:hover {
+        color: hsl(0, 94%, 66%);
+        border: 2px solid hsl(0, 94%, 66%);
+        background-color: white;
+        cursor: pointer;
+    }
+
+    #submit {
+        transition: background .5s, color .5s;
+    }
+
+    .chrome:hover, .down-box button:hover {
+        background-color: white;
+        border: 2px solid hsl(231, 69%, 60%);
+        color: hsl(231, 69%, 60%);
+        cursor: pointer;
+    }
+
+    .firefox:hover {
+        background-color: white;
+        border: 2px solid hsl(229, 31%, 21%);
+        color: hsl(229, 31%, 21%);
+        cursor: pointer;
+    }
+
+    .feature-list div:hover {
+        color: hsl(0, 94%, 66%);
+        cursor: pointer;
+    }
+
+    .more-info:hover {
+        cursor: pointer;
+    }
+
+    .question:hover {
+        cursor: pointer;
+    }
+
+    .question:hover > div:nth-child(1) {
+        color: hsl(0, 94%, 66%);
+        cursor: pointer;
+    }
+
+    .fb-logo:hover, .twitter-logo:hover {
+        fill:hsl(0, 94%, 66%);
+        cursor: pointer;
+    }
+}

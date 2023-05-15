@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Bookmark landing page</title>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="header-inner">
+        <img src="./images/logo-bookmark.svg" alt="bookmark logo" id="logo">
+        <img src="./images/icon-hamburger.svg" alt="hum" id="menu-open">
+        <nav id="desktop-nav">
+          <ul>
+            <hr>
+            <li>features</li>
+            <hr>
+            <li>pricing</li>
+            <hr>
+            <li>contact</li>
+            <hr>
+          </ul>
+          <button class="more-info">login</button>
+        </nav>
+      </div>
+      <nav id="mobile-nav">
+        <ul>
+          <hr>
+          <li>features</li>
+          <hr>
+          <li>pricing</li>
+          <hr>
+          <li>contact</li>
+          <hr>
+        </ul>
+        <button>login</button>
+        <div class="social-icons">
+          <img src="./images/icon-facebook.svg" alt="fb">
+          <img src="./images/icon-twitter.svg" alt="twitter">
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="heading-cont">
+        <div class="img">
+          <img src="./images/illustration-hero.svg" alt="hero" width="100%">
+          <div class="shape"></div>
+        </div>
+        <div class="bookmark-manager">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>A clean and simple interface to organize your favourite websites. Open a new 
+            browser tab and see your sites load instantly. Try it for free.</p>
+          <div class="get-btn-wrapper">
+            <button class="btn chrome">Get it on Chrome</button>
+            <button class="btn firefox">Get it on Firefox</button>
+          </div>
+        </div>
+      </div>
+      <div class="features">
+        <h2>Features</h2>
+        <p class="features-para">Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.</p>
+        <div class="feature-list">
+          <hr>
+          <div id="simple-bookmarking">Simple Bookmarking</div>
+          <hr>
+          <div id="speedy-searching">Speedy Searching</div>
+          <hr>
+          <div id="easy-sharing">Easy Sharing</div>
+          <hr>
+        </div>
+        <hr class="desktop-hr">
+        <div id="simple-bookmarking-cont" class="features-content">
+          <div class="shape"></div>
+          <div class="img1">
+            <img src="./images/illustration-features-tab-1.svg" alt="tab1" width="100%">
+          </div>
+          <div class="features-info">
+            <h2>Bookmark in one click</h2>
+            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+            gives you complete control over how you manage your favourite sites.</p>
+            <button class="more-info features-btn">More Info</button>
+          </div>
+        </div>
+        <div id="speedy-searching-cont" class="features-content">
+          <div class="shape"></div>
+          <div class="img1">
+            <img src="./images/illustration-features-tab-2.svg" alt="tab2" width="100%">
+          </div>
+          <div class="features-info">
+            <h2>Intelligent search</h2>
+          <p>Our powerful search feature will help you find saved sites in no time at all. 
+            No need to trawl through all of your bookmarks.</p>
+            <button class="more-info features-btn">More Info</button>
+          </div>
+        </div>
+        <div id="easy-sharing-cont" class="features-content">
+          <div class="shape"></div>
+          <div class="img1">
+            <img src="./images/illustration-features-tab-3.svg" alt="tab3" width="100%">
+          </div>
+          <div class="features-info">
+            <h2>Share your bookmarks</h2>
+          <p>Easily share your bookmarks and collections with others. Create a shareable 
+            link that you can send at the click of a button.</p>
+            <button class="more-info features-btn">More Info</button>
+          </div>
+        </div>
+      </div>
+      <div class="download-extension">
+        <h2>Download the extension</h2>
+        <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+          got a favourite you’d like us to prioritize.</p>
+        <div class="download-section">
+          <div class="down-box chrome-box">
+            <img src="./images/logo-chrome.svg" alt="chrome" class="browser-logo">
+            <div class="add-to">Add to Chrome</div>
+            <div class="version">Minimum version 62</div>
+            <img src="./images/bg-dots.svg" alt="dots" class="dots">
+            <button>Add & Install Extension</button>
+          </div>
+          <div class="down-box firefox-box">
+            <img src="./images/logo-firefox.svg" alt="firefox" class="browser-logo">
+            <div class="add-to">Add to Firefox</div>
+            <div class="version">Minimum version 55</div>
+            <img src="./images/bg-dots.svg" alt="dots" class="dots">
+            <button>Add & Install Extension</button></div>
+          <div class="down-box opera-box">
+            <img src="./images/logo-opera.svg" alt="opera" class="browser-logo">
+            <div class="add-to">Add to Opera</div>
+            <div class="version">Minimum version 46</div>
+            <img src="./images/bg-dots.svg" alt="dots" class="dots">
+            <button>Add & Install Extension</button></div>
+          </div>
+        </div>
+        <div class="faq">
+          <h2>Frequently Asked Questions</h2>
+          <p>Here are some of our FAQs. If you have any other questions you’d like 
+            answered please feel free to email us.</p>
+          <div class="text">
+            <button class="question">
+              <div>What is Bookmark?</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+            </button>
+            <div class="answer">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+            </div>
+            <hr>
+          </div>
+          <div class="text">
+            <button class="question">
+              <div>How can I request a new browser?</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+            </button>
+            <div class="answer">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</div>
+            <hr>
+          </div>
+          <div class="text">
+            <button class="question">
+              <div>Is there a mobile app?</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+            </button>
+            <div class="answer">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+              sollicitudin ex et ultricies bibendum.</div>
+            <hr>
+          </div>
+          <div class="text">
+            <button class="question">
+              <div>What about other Chromium browsers?</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+            </button>
+            <div class="answer">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+              vitae neque eget nisl gravida pellentesque non ut velit.</div>
+            <hr>
+          </div>
+          <button class="more-info">More Info</button>
+        </div>
+        <div class="contact">
+          <div class="joined">35,000+ already joined</div>
+          <div class="stay">Stay up-to-date with what we’re doing</div>
+          <form>
+            <div class="input-wrapper">
+              <div class="input-with-error">
+                <input id="email" type="email" placeholder="Enter your email address">
+              </div>
+              
+              <img src="./images/icon-error.svg" alt="error" id="error">
+            </div>
+            
+            <button id="submit">Contact Us</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="list-wrapper">
+        <img src="./images/logo-bookmark-light.svg" alt="logo">
+      <ul>
+        <li>features</li>
+        <li>pricing</li>
+        <li>contact</li>
+      </ul>
+      </div>
+      
+      <div class="social-icons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="fb-logo" fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path class="twitter-logo" fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
+      </div>
+    </footer>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
