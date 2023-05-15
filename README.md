@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Dmaneral/bookmark-landing-page-master](https://github.com/Dmaneral/bookmark-landing-page-master)
+- Live Site URL: [https://dmaneral.github.io/bookmark-landing-page-master/](https://dmaneral.github.io/bookmark-landing-page-master/)
 
 ## My process
 
